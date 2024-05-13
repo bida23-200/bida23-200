@@ -1,0 +1,7 @@
+body {
+    background-color: #5f5b5b; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    font-family: Arial, sans-serif; /* Optional: choose a suitable font */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}

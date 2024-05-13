@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warner Bros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body data-bs-theme="dark">
+    <h1>Feedback</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <header>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="movies.html">Movies</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="tvshows.html">TV Shows</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="games&apps.html">Games & Apps</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="collections.html">Collections</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="feedback.html">Feedback</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+    <div class="container">
+      <h2>Customer Feedback</h2>
+      <form id="feedback-form">
+          <div class="form-group">
+              <input type="radio" id="highly_satisfied" name="feedback" value="highly_satisfied">
+              <label for="highly_satisfied">I am highly satisfied</label>
+          </div>
+          <div class="form-group">
+              <input type="radio" id="satisfied" name="feedback" value="satisfied">
+              <label for="satisfied">I am satisfied</label>
+          </div>
+          <div class="form-group">
+              <input type="radio" id="neutral" name="feedback" value="neutral">
+              <label for="neutral">Neutral</label>
+          </div>
+          <div class="form-group">
+              <input type="radio" id="dissatisfied" name="feedback" value="dissatisfied">
+              <label for="dissatisfied">Dissatisfied</label>
+          </div>
+          <div class="form-group">
+              <input type="radio" id="highly_unsatisfied" name="feedback" value="highly_unsatisfied">
+              <label for="highly_unsatisfied">Highly unsatisfied</label>
+          </div>
+          <button type="submit" class="submit-btn">Submit Feedback</button>
+      </form>
+      <div id="submit-msg" class="submit-msg" style="display: none;">Your feedback was submitted, thank you 😊</div>
+  </div>
+  <script>
+  document.getElementById('feedback-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      document.getElementById('submit-msg').style.display = 'block'; // Display submission message
+  });
+  </script>
+     <!-- FOOTER -->
+  <footer class="text-body-secondary py-5">
+    <div class="container">
+      <p class="float-end mb-1"></p>
+      <p class="mb-0">Discover <a href="index.html">Visit the homepage</a><a href="/docs/5.3/getting-started/introduction/"></a></p>
+    </div>
+  </footer>
+</body>
+ </html>
+      
